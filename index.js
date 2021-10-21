@@ -37,8 +37,8 @@ app.post('/users', (req, res) => {
     newUser.id = users.length;
     users.push(newUser)
     console.log('hitting the post', req.body);
-    res.send('inside post')
     res.json(newUser)
+    
 })
 
 
